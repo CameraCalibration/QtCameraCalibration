@@ -1,2 +1,2 @@
-# QtCameraCalibration
-Camera Calibration using Qt and C++
+# QtPatterntracking
+Pattern Tracking for Grid of Rings using Qt.
