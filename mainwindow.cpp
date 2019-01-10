@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "cameracalibrator.h"
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
+MainWindow::MainWindow(Settings s, QWidget *parent) : QMainWindow(parent)
 {
     phbxLayout1 = new QBoxLayout(QBoxLayout::LeftToRight);
         numCols = new QLineEdit();
@@ -99,7 +99,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     QString message = tr("A context menu is available by right-clicking");
     statusBar()->showMessage(message);
 
-    calibrator = new CameraCalibrator();
+    calibrator = new CameraCalibrator(s);
     calibrator->setVisualizer(this);
     on_rbRing_clicked();
 }
@@ -218,8 +218,8 @@ void MainWindow::visualizeImage(int id, QImage img, std::string title)
 void MainWindow::on_rbRing_clicked()
 {
     pattSelected = PATT_RING;
-    numRows->setText("5");
-    numCols->setText("6");
+    numRows->setText("4");
+    numCols->setText("5");
 }
 
 void MainWindow::cleanImage(int id)

@@ -24,6 +24,7 @@
 #include <QFileDialog>
 #include <opencv2/opencv.hpp>
 #include "constants.h"
+#include "settings.h"
 
 class CameraCalibrator;
 
@@ -31,7 +32,7 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(Settings s, QWidget *parent = nullptr);
 
     void visualizeMsg(std::string msg);
     void visualizeValue(std::string label, double value);

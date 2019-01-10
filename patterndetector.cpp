@@ -371,7 +371,7 @@ bool PatternDetector::processingRingsPattern(std::vector<cv::Point2f> &keypoints
 
     std::sprintf(time, "Pattern Time: %.3f - Total Time: %.3f", pattern_time, gray_time+blur_time+threshold_time+grid_time+conhull_time+pattern_time);
     putText(img, time, cv::Point2f(15, 25), cv::FONT_HERSHEY_PLAIN, 1.5, cv::Scalar(0, 0, 255, 255), 2);
-    cv::drawChessboardCorners(img, cv::Size(numCols, numRows), keypoints, true);
+    cv::drawChessboardCorners(img, cv::Size(numRows, numCols), keypoints, true);
     visualizer->visualizeImage(PROCFIN, ImageHelper::convertMatToQimage(img), "Pattern");
 
     acc_t += (gray_time+blur_time+threshold_time+grid_time+conhull_time+pattern_time);

@@ -20,7 +20,6 @@ SOURCES += \
         main.cpp \
     mainwindow.cpp \
     patterndetector.cpp \
-#    trackinggrid.cpp \
     cameracalibrator.cpp
 
 OPENCV_DIR = "D:\opt\opencv\build"
@@ -38,9 +37,14 @@ else {
 HEADERS += \
     mainwindow.h \
     patterndetector.h \
-#    trackinggrid.h \
     cameracalibrator.h \
     image.h \
     geometria.h \
     constants.h \
-    metrics.h
+    metrics.h \
+    settings.h
+
+DISTFILES += \
+    settings.xml \
+    settings.xml \
+    out_camera_data.xml
