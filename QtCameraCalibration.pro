@@ -1,6 +1,6 @@
 QT += core gui widgets
 
-TARGET = PatternTracking
+TARGET = CameraCalibration
 TEMPLATE = app
 CONFIG += c++11 console
 CONFIG -= app_bundle
