@@ -1,5 +1,5 @@
-# QtPatterntracking
-Pattern Tracking for Grid of Rings using Qt.
+# QtCameraCalibration
+Camera Calibration using Grid of Rings with Qt.
 
 # Requirements
 
