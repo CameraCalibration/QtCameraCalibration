@@ -14,10 +14,10 @@ Pattern Tracking for Grid of Rings using Qt.
  *  Clone the repository inside the directory solution:
  
  ``
- git clone https://github.com/CameraCalibration/QtPatterntracking.git
+ git clone https://github.com/CameraCalibration/QtCameraCalibration.git
  ``
  
- *  Open QtCreator and open the file **QtPatternTracking.pro**.
+ *  Open QtCreator and open the file **QtCameraCalibration.pro**.
  *  Finally, build using the architecture of home.
  
 ## Contact
